@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>upload File</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Upload the File</h1>
+
+<form id="myForm" action="/" method="post"  enctype="multipart/form-data">
+<label for="fileInput">choose a file(pdf/doc/docx/png/jpg) :</label><br>
+<input type="file" id="fileInput" name="file" required="required">
+
+
+<button type="submit">upload</button>
+</form><br><br>
+
+<form action="">
+
+<label for="data">Docs Data :</label>
+<textarea rows="40" cols="70" id="data" name="data" th:text="${data}"></textarea><br><br>
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" th:value="${name}"/><br/><br/>
+
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" th:value="${phone}"/><br><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" th:value="${email}"/><br><br>
+
+<label for="qualification">Quelification :</label>
+<input type="text" id="qualification" name="qualication" th:value="${qualification}"/><br><br>
+
+<label for="skills">Skills :</label>
+<textarea rows="2" cols="40" id="skills" name="skills" th:text="${skills}"></textarea><br><br>
+
+
+<label for="summary">profile/Summary :</label>
+<textarea rows="3" cols="50" id="summary" name="summary" th:text="${summary}"></textarea><br><br>
+
+
+<label for="url">LinkedIn_URl :</label><br><br>
+<input type="url" id="url" name="url" th:value=${url}><br><br>
+
+</form>
+</body>
+</html>
