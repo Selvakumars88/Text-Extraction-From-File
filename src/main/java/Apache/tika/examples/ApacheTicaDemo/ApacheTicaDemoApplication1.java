@@ -17,8 +17,8 @@ public class ApacheTicaDemoApplication1 {
             
             
           
-            String fpath = "C:\\Users\\AMIN\\Downloads\\Selvakumar S_Resume.docx";
-            String tpath = "C:\\Program Files\\Tesseract-OCR\\tessdata";
+            String fpath = "File_Path";
+            String tpath = "Tess_Ocr_Path";
             
             
             
